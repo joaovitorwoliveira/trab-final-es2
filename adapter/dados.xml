@@ -1,0 +1,30 @@
+<vendas>
+    <venda>
+        <marca>Volkswagen</marca>
+        <modelo>Gol</modelo>
+        <estado>SP</estado>
+        <quantidade>1500</quantidade>
+        <mes>Janeiro</mes>
+    </venda>
+    <venda>
+        <marca>Fiat</marca>
+        <modelo>Palio</modelo>
+        <estado>RJ</estado>
+        <quantidade>1200</quantidade>
+        <mes>Janeiro</mes>
+    </venda>
+    <venda>
+        <marca>Chevrolet</marca>
+        <modelo>Onix</modelo>
+        <estado>MG</estado>
+        <quantidade>2000</quantidade>
+        <mes>Janeiro</mes>
+    </venda>
+    <venda>
+        <marca>Volkswagen</marca>
+        <modelo>Fusca</modelo>
+        <estado>SP</estado>
+        <quantidade>800</quantidade>
+        <mes>Fevereiro</mes>
+    </venda>
+</vendas>
