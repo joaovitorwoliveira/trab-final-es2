@@ -21,13 +21,13 @@ Este padrão utiliza uma composição de objetos para "encapar" o objeto origina
 
 - Você pode estender o comportamento de um objeto sem criar uma nova subclasse.
 - É possível adicionar ou remover responsabilidades de um objeto em tempo de execução.
-- Permite combinar diversos comportamentos ao envolver o objeto com múltiplos decoradores.
+- Permite combinar diversos comportamentos ao envolver o objeto com múltiplos decoradores. Exemplo, um objeto pode ser decorado com LoggerDecorator e CacheDecorator, acumulando funcionalidades.
 
 ## Contras
 
-- É difícil remover um invólucro de uma pilha de invólucros.
-- Implementar um decorador que não dependa da ordem da pilha de decoradores pode ser desafiador.
+- Cada decorador adiciona uma camada adicional de execução ao redor do objeto, o que pode levar a sobrecarga em cenários onde desempenho é crítico.
 - A configuração inicial do código com várias camadas de decoradores pode ficar complexa e visualmente confusa.
+- A ordem de aplicação de decorators é importante, o que pode gerar confusão. Exemplo, um LoggerDecorator pode precisar ser aplicado antes de um EncryptDecorator para registrar dados antes da criptografia.
 
 # Padrões Estruturais: Adapter
 
