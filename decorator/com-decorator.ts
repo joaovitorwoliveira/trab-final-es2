@@ -2,7 +2,7 @@ interface Notifier {
   send(message: string): void;
 }
 
-class EmailNotifier implements Notifier {
+class BaseNotificationService implements Notifier {
   send(message: string): void {
     console.log(`Enviando email: ${message}`);
   }
@@ -34,7 +34,7 @@ class PushNotifier extends NotifierDecorator {
 }
 
 // Uso
-const emailNotifier = new EmailNotifier(); // Notificação básica
+const emailNotifier = new BaseNotificationService(); // Notificação básica
 
 // Adiciona funcionalidade SMS
 const smsNotifier = new SMSNotifier(emailNotifier);
